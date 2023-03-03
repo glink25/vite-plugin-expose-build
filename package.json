@@ -1,0 +1,31 @@
+{
+  "name": "vite-vue-typescript-starter",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "./build.sh",
+    "build-app": "npm run build-app:vue",
+    "build-app:vue": "cd test/vue &&vue-tsc && vite build --outDir=../../dist && cp ../../dist/load_external.js ../../external_site/load_external.js",
+    "preview": "node preview.js"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.6",
+    "@types/node": "^18.14.2",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "esbuild": "^0.17.10",
+    "koa": "^2.14.1",
+    "koa-static": "^5.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.4",
+    "vue-tsc": "^1.1.7"
+  }
+}

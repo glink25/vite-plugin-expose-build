@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>External Site</title>
+    <style>
+      body {
+      }
+      h1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>This is External page</div>
+    <div>with a lot of mixed css and js files!</div>
+    <div>You can now use components from other site!</div>
+    <div id="append"></div>
+    <script src="./load_external.js"></script>
+    <script>
+      window.external_mount(document.querySelector('#append'));
+    </script>
+  </body>
+</html>
