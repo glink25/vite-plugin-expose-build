@@ -1,5 +1,5 @@
 {
-  "name": "vite-vue-typescript-starter",
+  "name": "vite-plugin-expose-build",
   "version": "0.0.1",
   "type": "module",
   "description": "",
@@ -7,6 +7,12 @@
     "lib",
     "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:glink25/vite-plugin-expose-build.git"
+  },
+  "main": "lib/index.js",
+  "module": "lib/index.js",
   "scripts": {
     "build": "./build.sh",
     "build-app": "npm run build-app:vue",
@@ -14,8 +20,6 @@
     "preview": "node preview.js"
   },
   "dependencies": {
-    "lodash-es": "^4.17.21",
-    "vue": "^3.2.47"
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.6",
@@ -26,6 +30,8 @@
     "koa-static": "^5.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.1.4",
-    "vue-tsc": "^1.1.7"
+    "vue-tsc": "^1.1.7",
+    "lodash-es": "^4.17.21",
+    "vue": "^3.2.47"
   }
 }
